@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cfh3acfcy0ul1"]
+
+[ext_resource type="Script" uid="uid://q5apvauvp7xc" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://dtqt38d5li7av" path="res://tarea2_LlumiquingaM.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dfc35hcw2k8pq" path="res://player.gd" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://ck5dlja7p8ixy" path="res://assets/background.jpg" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://p5e2ksgjxlu" path="res://assets/sprite_zane.png" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://2n71wo5ti70x" path="res://assets/fondo_txt.jpg" id="3_7mycd"]
+
+[node name="Node2D" type="Node2D" unique_id=605917258]
+script = ExtResource("1_1bvp3")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1043324458]
+position = Vector2(599, 311)
+scale = Vector2(0.34094834, 0.34845877)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="background" unique_id=1087191221]
+position = Vector2(-1035.3475, -180.79616)
+scale = Vector2(2.556461, 4.0350966)
+texture = ExtResource("3_7mycd")
+
+[node name="Hud" type="Label" parent="." unique_id=312118227]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 80.0
+offset_bottom = 80.0
+scale = Vector2(1.395, 1)
+script = ExtResource("1_ig7tw")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=128884884]
+script = ExtResource("2_h2yge")
+
+[node name="player" type="Sprite2D" parent="Player" unique_id=108751643]
+position = Vector2(576, 500)
+scale = Vector2(0.449, 0.5)
+texture = ExtResource("3_1bvp3")
